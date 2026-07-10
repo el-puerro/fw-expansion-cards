@@ -259,7 +259,7 @@
       "internal_id": "",
       "mfg": "",
       "mpn": "",
-      "sch_revision": ""
+      "sch_revision": "${REVISION}"
     },
     "layer_pairs": [],
     "layer_presets": [],
@@ -697,14 +697,26 @@
       {
         "filename": "usb-c-expansion-card.kicad_sch",
         "name": "usb-c-expansion-card",
-        "uuid": "00000000-0000-0000-0000-000000000000"
+        "uuid": "9675e52d-2195-4f83-b819-002e48533b64"
       }
     ],
-    "used_designators": "",
+    "used_designators": "#PWR1-13,U1-3,C1-2,D1-8,J1,P1",
     "variants": []
   },
-  "sheets": [],
-  "text_variables": {},
+  "sheets": [
+    [
+      "9675e52d-2195-4f83-b819-002e48533b64",
+      "usb-c-expansion-card"
+    ]
+  ],
+  "text_variables": {
+    "COMMENT1": "Licensed under CC BY 4.0 by Framework Computer Inc.",
+    "COMMENT2": "https://redlucy404.de",
+    "COMMENT3": "based on https://frame.work expansion card repository",
+    "COMPANY": "Lucy Mielke",
+    "REVISION": "1.0",
+    "TITLE": "3rd Party Framework-Compatible Expansion Card (USB-C to USB-C)"
+  },
   "tuning_profiles": {
     "meta": {
       "version": 0
