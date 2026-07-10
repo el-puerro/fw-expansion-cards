@@ -51,7 +51,7 @@
       "shapes",
       "ly_points"
     ],
-    "visible_layers": "00000000_00000000_00000000_aa8aaaaf",
+    "visible_layers": "00000000_00000000_00000002_aaaaaaff",
     "zone_display_mode": 0
   },
   "git": {
@@ -75,6 +75,8 @@
       false,
       false,
       false,
+      false,
+      false,
       false
     ],
     "col_order": [
@@ -87,7 +89,9 @@
       6,
       7,
       8,
-      9
+      9,
+      10,
+      11
     ],
     "col_widths": [],
     "custom_group_rules": [],
