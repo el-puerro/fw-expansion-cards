@@ -6,7 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "${TITLE}")
-		(date "2026-07-11")
+		(date "${CURRENT_DATE}")
 		(rev "${REVISION}")
 		(company "${COMPANY}")
 		(comment 1 "${COMMENT1}")
