@@ -3564,7 +3564,7 @@
 		)
 		(uuid "ff522ec3-c5a9-483d-904a-619ba7ff5f3e")
 	)
-	(label "TX2P_ESD"
+	(label "ESD_TX2_P"
 		(at 128.27 60.96 0)
 		(effects
 			(font
@@ -3574,7 +3574,7 @@
 		)
 		(uuid "0443a580-a2df-4b6e-bfe2-3145384720ff")
 	)
-	(label "TX2N_ESD"
+	(label "ESD_TX2_N"
 		(at 118.11 60.96 0)
 		(effects
 			(font
@@ -3583,6 +3583,26 @@
 			(justify left bottom)
 		)
 		(uuid "1752ef6d-0a68-4611-a645-2c35a5cb57dd")
+	)
+	(label "VCONN"
+		(at 222.25 44.45 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "2805e436-e096-40e9-a003-ffa7e4377d74")
+	)
+	(label "IN_SBU2"
+		(at 199.39 95.25 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "37a40f3c-eda7-49be-b7e8-b0d1e6ec42c8")
 	)
 	(label "VBUS"
 		(at 200.66 36.83 0)
@@ -3594,7 +3614,7 @@
 		)
 		(uuid "3d54cd16-8053-4f2d-9c39-303d2d3000e7")
 	)
-	(label "RX2P_ESD"
+	(label "ESD_RX2_P"
 		(at 107.95 60.96 0)
 		(effects
 			(font
@@ -3604,7 +3624,7 @@
 		)
 		(uuid "44f34e3c-ab9a-4c73-8551-700c1f7e8051")
 	)
-	(label "TX1P_ESD"
+	(label "ESD_TX1_P"
 		(at 201.93 74.93 0)
 		(effects
 			(font
@@ -3614,7 +3634,7 @@
 		)
 		(uuid "4622ab2c-4b67-4af9-93be-3cfa656ba626")
 	)
-	(label "RX2N_ESD"
+	(label "ESD_RX2_N"
 		(at 96.52 60.96 0)
 		(effects
 			(font
@@ -3624,7 +3644,7 @@
 		)
 		(uuid "487f34c3-4f0d-4c9d-97b4-d734ce8a53d5")
 	)
-	(label "RX1P_ESD"
+	(label "ESD_RX1_P"
 		(at 64.77 60.96 0)
 		(effects
 			(font
@@ -3644,7 +3664,7 @@
 		)
 		(uuid "70b7965d-c677-483a-a0cb-62d6ca81bdce")
 	)
-	(label "TX2N_ESD"
+	(label "ESD_TX2_N"
 		(at 201.93 82.55 0)
 		(effects
 			(font
@@ -3654,7 +3674,7 @@
 		)
 		(uuid "82ea1b69-4f81-4981-a976-a121d92e6a9d")
 	)
-	(label "RX1P_ESD"
+	(label "ESD_RX1_P"
 		(at 218.44 67.31 0)
 		(effects
 			(font
@@ -3664,7 +3684,7 @@
 		)
 		(uuid "83af18b8-58de-476e-a497-4b1ef1d618de")
 	)
-	(label "RX2P_ESD"
+	(label "ESD_RX2_P"
 		(at 215.9 82.55 0)
 		(effects
 			(font
@@ -3674,7 +3694,27 @@
 		)
 		(uuid "85a4ae38-091c-404d-83a3-09780c8b3518")
 	)
-	(label "TX1P_ESD"
+	(label "OUT_SBU1"
+		(at 217.17 92.71 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "87e5c020-c46f-4a7e-951d-9580e68ac296")
+	)
+	(label "CC1"
+		(at 200.66 41.91 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "908293ba-0887-43b8-89d5-e0f10785111b")
+	)
+	(label "ESD_TX1_P"
 		(at 85.09 60.96 0)
 		(effects
 			(font
@@ -3684,7 +3724,27 @@
 		)
 		(uuid "924b38b8-dba2-40f3-ac62-98a7fe25bae8")
 	)
-	(label "RX2N_ESD"
+	(label "CC"
+		(at 222.25 41.91 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "93d30d3d-4daf-424b-9b25-d5803497ac52")
+	)
+	(label "CC2"
+		(at 200.66 44.45 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9a27a9c4-46fa-415c-8146-fb426581d386")
+	)
+	(label "ESD_RX2_N"
 		(at 215.9 74.93 0)
 		(effects
 			(font
@@ -3694,7 +3754,17 @@
 		)
 		(uuid "a0ea00ca-7310-417f-9c13-8d2dab987e15")
 	)
-	(label "TX1N_ESD"
+	(label "OUT_D_P"
+		(at 218.44 54.61 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a2d995a1-313d-4506-a470-f4275684b0d2")
+	)
+	(label "ESD_TX1_N"
 		(at 201.93 67.31 0)
 		(effects
 			(font
@@ -3704,7 +3774,27 @@
 		)
 		(uuid "a7224521-03e0-4eaf-b362-fa28b7813f74")
 	)
-	(label "TX1N_ESD"
+	(label "IN_SBU1"
+		(at 199.39 92.71 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d89e6274-3026-4dbf-a29c-331692c4a967")
+	)
+	(label "OUT_SBU2"
+		(at 217.17 95.25 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "da93ce74-eb54-4d78-a690-78f569b4694a")
+	)
+	(label "ESD_TX1_N"
 		(at 74.93 60.96 0)
 		(effects
 			(font
@@ -3714,7 +3804,7 @@
 		)
 		(uuid "dc681cd5-949d-4228-bed7-ae88c366d68b")
 	)
-	(label "RX1N_ESD"
+	(label "ESD_RX1_N"
 		(at 219.71 59.69 0)
 		(effects
 			(font
@@ -3724,7 +3814,27 @@
 		)
 		(uuid "e011a85d-79d3-4f1a-800f-fddbf6872387")
 	)
-	(label "RX1N_ESD"
+	(label "OUT_D_N"
+		(at 218.44 49.53 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "edf6e0c3-9e04-4d0e-8301-e4529c4538b7")
+	)
+	(label "IN_D_P"
+		(at 199.39 54.61 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f3e3bc3a-2ca3-4bb9-a4a6-feb20340e0ef")
+	)
+	(label "ESD_RX1_N"
 		(at 54.61 60.96 0)
 		(effects
 			(font
@@ -3734,7 +3844,17 @@
 		)
 		(uuid "fd5caea8-9655-4997-b519-ff76850dd1c8")
 	)
-	(label "TX2P_ESD"
+	(label "IN_D_N"
+		(at 199.39 52.07 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "fe968f4a-f855-4f10-97ab-272135606fa1")
+	)
+	(label "ESD_TX2_P"
 		(at 212.09 88.9 0)
 		(effects
 			(font
