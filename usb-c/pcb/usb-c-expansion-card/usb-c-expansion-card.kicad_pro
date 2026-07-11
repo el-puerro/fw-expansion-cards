@@ -601,7 +601,7 @@
   "pcbnew": {
     "last_paths": {
       "idf": "",
-      "netlist": "",
+      "netlist": "./",
       "plot": "",
       "specctra_dsn": "",
       "vrml": ""
