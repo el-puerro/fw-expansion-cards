@@ -6,7 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "${TITLE}")
-		(date "2026-05-30")
+		(date "2026-07-11")
 		(rev "${REVISION}")
 		(company "${COMPANY}")
 		(comment 1 "${COMMENT1}")
@@ -2926,7 +2926,7 @@
 	)
 	(wire
 		(pts
-			(xy 54.61 60.96) (xy 54.61 64.77)
+			(xy 76.835 111.125) (xy 80.645 111.125)
 		)
 		(stroke
 			(width 0)
@@ -2986,7 +2986,7 @@
 	)
 	(wire
 		(pts
-			(xy 85.09 60.96) (xy 85.09 64.77)
+			(xy 76.835 80.645) (xy 80.645 80.645)
 		)
 		(stroke
 			(width 0)
@@ -3076,7 +3076,7 @@
 	)
 	(wire
 		(pts
-			(xy 128.27 60.96) (xy 128.27 64.77)
+			(xy 76.2 38.1) (xy 80.01 38.1)
 		)
 		(stroke
 			(width 0)
@@ -3206,7 +3206,7 @@
 	)
 	(wire
 		(pts
-			(xy 118.11 60.96) (xy 118.11 64.77)
+			(xy 76.835 47.625) (xy 80.645 47.625)
 		)
 		(stroke
 			(width 0)
@@ -3376,7 +3376,7 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 60.96) (xy 107.95 64.77)
+			(xy 76.835 57.785) (xy 80.645 57.785)
 		)
 		(stroke
 			(width 0)
@@ -3396,7 +3396,7 @@
 	)
 	(wire
 		(pts
-			(xy 74.93 60.96) (xy 74.93 64.77)
+			(xy 76.835 90.805) (xy 80.645 90.805)
 		)
 		(stroke
 			(width 0)
@@ -3426,7 +3426,7 @@
 	)
 	(wire
 		(pts
-			(xy 96.52 60.96) (xy 96.52 64.77)
+			(xy 76.835 69.215) (xy 80.645 69.215)
 		)
 		(stroke
 			(width 0)
@@ -3516,7 +3516,7 @@
 	)
 	(wire
 		(pts
-			(xy 64.77 60.96) (xy 64.77 64.77)
+			(xy 76.835 100.965) (xy 80.645 100.965)
 		)
 		(stroke
 			(width 0)
@@ -3565,22 +3565,22 @@
 		(uuid "ff522ec3-c5a9-483d-904a-619ba7ff5f3e")
 	)
 	(label "ESD_TX2_P"
-		(at 128.27 60.96 0)
+		(at 76.2 38.1 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "0443a580-a2df-4b6e-bfe2-3145384720ff")
 	)
 	(label "ESD_TX2_N"
-		(at 118.11 60.96 0)
+		(at 76.835 47.625 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "1752ef6d-0a68-4611-a645-2c35a5cb57dd")
 	)
@@ -3615,12 +3615,12 @@
 		(uuid "3d54cd16-8053-4f2d-9c39-303d2d3000e7")
 	)
 	(label "ESD_RX2_P"
-		(at 107.95 60.96 0)
+		(at 76.835 57.785 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "44f34e3c-ab9a-4c73-8551-700c1f7e8051")
 	)
@@ -3635,22 +3635,22 @@
 		(uuid "4622ab2c-4b67-4af9-93be-3cfa656ba626")
 	)
 	(label "ESD_RX2_N"
-		(at 96.52 60.96 0)
+		(at 76.835 69.215 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "487f34c3-4f0d-4c9d-97b4-d734ce8a53d5")
 	)
 	(label "ESD_RX1_P"
-		(at 64.77 60.96 0)
+		(at 76.835 100.965 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "5b78842c-8a88-454e-9714-5958232120f9")
 	)
@@ -3715,12 +3715,12 @@
 		(uuid "908293ba-0887-43b8-89d5-e0f10785111b")
 	)
 	(label "ESD_TX1_P"
-		(at 85.09 60.96 0)
+		(at 76.835 80.645 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "924b38b8-dba2-40f3-ac62-98a7fe25bae8")
 	)
@@ -3795,12 +3795,12 @@
 		(uuid "da93ce74-eb54-4d78-a690-78f569b4694a")
 	)
 	(label "ESD_TX1_N"
-		(at 74.93 60.96 0)
+		(at 76.835 90.805 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "dc681cd5-949d-4228-bed7-ae88c366d68b")
 	)
@@ -3835,12 +3835,12 @@
 		(uuid "f3e3bc3a-2ca3-4bb9-a4a6-feb20340e0ef")
 	)
 	(label "ESD_RX1_N"
-		(at 54.61 60.96 0)
+		(at 76.835 111.125 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "fd5caea8-9655-4997-b519-ff76850dd1c8")
 	)
@@ -3866,7 +3866,7 @@
 	)
 	(symbol
 		(lib_id "Device:D_TVS")
-		(at 107.95 69.85 270)
+		(at 85.725 57.785 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3876,7 +3876,7 @@
 		(dnp no)
 		(uuid "077d48ea-c09b-4e9a-b676-eefc748e7d78")
 		(property "Reference" "D6"
-			(at 107.442 83.058 90)
+			(at 85.598 63.754 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3886,7 +3886,7 @@
 			)
 		)
 		(property "Value" "AZ5B0S-01F"
-			(at 107.442 85.598 90)
+			(at 85.598 61.214 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3896,7 +3896,7 @@
 			)
 		)
 		(property "Footprint" "Diode_SMD:D_0603_1608Metric"
-			(at 107.95 69.85 0)
+			(at 85.725 57.785 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3907,7 +3907,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 107.95 69.85 0)
+			(at 85.725 57.785 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3918,7 +3918,7 @@
 			)
 		)
 		(property "Description" "Bidirectional transient-voltage-suppression diode"
-			(at 107.95 69.85 0)
+			(at 85.725 57.785 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4257,7 +4257,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 107.95 74.93 0)
+		(at 90.805 57.785 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4268,7 +4268,7 @@
 		(fields_autoplaced yes)
 		(uuid "39bbcd59-f5c9-4848-bdfa-b30a010d97b7")
 		(property "Reference" "#PWR011"
-			(at 107.95 81.28 0)
+			(at 97.155 57.785 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4279,7 +4279,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 107.95 80.01 0)
+			(at 95.885 57.785 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4289,7 +4289,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 107.95 74.93 0)
+			(at 90.805 57.785 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4300,7 +4300,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 107.95 74.93 0)
+			(at 90.805 57.785 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4311,7 +4311,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 107.95 74.93 0)
+			(at 90.805 57.785 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4478,7 +4478,7 @@
 	)
 	(symbol
 		(lib_id "Device:D_TVS")
-		(at 118.11 69.85 270)
+		(at 85.725 47.625 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4488,7 +4488,7 @@
 		(dnp no)
 		(uuid "3bcb3ffb-e265-4cef-8cfb-f1ffcd495f54")
 		(property "Reference" "D7"
-			(at 118.11 85.344 90)
+			(at 85.852 53.848 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4498,7 +4498,7 @@
 			)
 		)
 		(property "Value" "AZ5B0S-01F"
-			(at 118.11 87.884 90)
+			(at 85.852 51.308 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4508,7 +4508,7 @@
 			)
 		)
 		(property "Footprint" "Diode_SMD:D_0603_1608Metric"
-			(at 118.11 69.85 0)
+			(at 85.725 47.625 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4519,7 +4519,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 118.11 69.85 0)
+			(at 85.725 47.625 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4530,7 +4530,7 @@
 			)
 		)
 		(property "Description" "Bidirectional transient-voltage-suppression diode"
-			(at 118.11 69.85 0)
+			(at 85.725 47.625 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4557,7 +4557,7 @@
 	)
 	(symbol
 		(lib_id "Device:D_TVS")
-		(at 85.09 69.85 270)
+		(at 85.725 80.645 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4567,7 +4567,7 @@
 		(dnp no)
 		(uuid "424753be-9f5e-47bc-a62e-261ac6acc36b")
 		(property "Reference" "D4"
-			(at 85.09 79.502 90)
+			(at 85.852 86.614 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4577,7 +4577,7 @@
 			)
 		)
 		(property "Value" "AZ5B0S-01F"
-			(at 85.344 85.598 90)
+			(at 86.106 84.582 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4587,7 +4587,7 @@
 			)
 		)
 		(property "Footprint" "Diode_SMD:D_0603_1608Metric"
-			(at 85.09 69.85 0)
+			(at 85.725 80.645 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4598,7 +4598,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 85.09 69.85 0)
+			(at 85.725 80.645 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4609,7 +4609,7 @@
 			)
 		)
 		(property "Description" "Bidirectional transient-voltage-suppression diode"
-			(at 85.09 69.85 0)
+			(at 85.725 80.645 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4636,7 +4636,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 54.61 74.93 0)
+		(at 90.805 111.125 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4647,7 +4647,7 @@
 		(fields_autoplaced yes)
 		(uuid "433fed4c-6fc9-48c2-8db2-c3c7a4966bb0")
 		(property "Reference" "#PWR06"
-			(at 54.61 81.28 0)
+			(at 97.155 111.125 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4658,7 +4658,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 54.61 80.01 0)
+			(at 95.885 111.125 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4668,7 +4668,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 54.61 74.93 0)
+			(at 90.805 111.125 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4679,7 +4679,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 54.61 74.93 0)
+			(at 90.805 111.125 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4690,7 +4690,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 54.61 74.93 0)
+			(at 90.805 111.125 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4714,7 +4714,7 @@
 	)
 	(symbol
 		(lib_id "Device:D_TVS")
-		(at 128.27 69.85 270)
+		(at 85.09 38.1 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4724,7 +4724,7 @@
 		(dnp no)
 		(uuid "5c98e53c-1ca7-40f9-85f2-fa65294c37ab")
 		(property "Reference" "D8"
-			(at 128.016 82.804 90)
+			(at 84.963 44.069 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4734,7 +4734,7 @@
 			)
 		)
 		(property "Value" "AZ5B0S-01F"
-			(at 128.016 85.344 90)
+			(at 84.963 41.529 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4744,7 +4744,7 @@
 			)
 		)
 		(property "Footprint" "Diode_SMD:D_0603_1608Metric"
-			(at 128.27 69.85 0)
+			(at 85.09 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4755,7 +4755,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 128.27 69.85 0)
+			(at 85.09 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4766,7 +4766,7 @@
 			)
 		)
 		(property "Description" "Bidirectional transient-voltage-suppression diode"
-			(at 128.27 69.85 0)
+			(at 85.09 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4793,7 +4793,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 85.09 74.93 0)
+		(at 90.805 80.645 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4803,7 +4803,7 @@
 		(dnp no)
 		(uuid "6259f84b-5dd8-41ff-928f-5ff975058b0b")
 		(property "Reference" "#PWR09"
-			(at 85.09 81.28 0)
+			(at 97.155 80.645 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4814,7 +4814,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 85.344 83.566 0)
+			(at 96.266 80.772 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4824,7 +4824,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 85.09 74.93 0)
+			(at 90.805 80.645 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4835,7 +4835,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 85.09 74.93 0)
+			(at 90.805 80.645 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4846,7 +4846,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 85.09 74.93 0)
+			(at 90.805 80.645 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4870,7 +4870,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 118.11 74.93 0)
+		(at 90.805 47.625 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4881,7 +4881,7 @@
 		(fields_autoplaced yes)
 		(uuid "696928bc-5f5c-4b58-877d-8cfc8a581074")
 		(property "Reference" "#PWR012"
-			(at 118.11 81.28 0)
+			(at 97.155 47.625 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4892,7 +4892,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 118.11 80.01 0)
+			(at 95.885 47.625 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4902,7 +4902,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 118.11 74.93 0)
+			(at 90.805 47.625 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4913,7 +4913,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 118.11 74.93 0)
+			(at 90.805 47.625 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4924,7 +4924,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 118.11 74.93 0)
+			(at 90.805 47.625 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5104,7 +5104,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 96.52 74.93 0)
+		(at 90.805 69.215 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5115,7 +5115,7 @@
 		(fields_autoplaced yes)
 		(uuid "88157409-c035-44af-b1eb-5e60a0ebc364")
 		(property "Reference" "#PWR010"
-			(at 96.52 81.28 0)
+			(at 97.155 69.215 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5126,7 +5126,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 96.52 80.01 0)
+			(at 95.885 69.215 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5136,7 +5136,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 96.52 74.93 0)
+			(at 90.805 69.215 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5147,7 +5147,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 96.52 74.93 0)
+			(at 90.805 69.215 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5158,7 +5158,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 96.52 74.93 0)
+			(at 90.805 69.215 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5260,7 +5260,7 @@
 	)
 	(symbol
 		(lib_id "Device:D_TVS")
-		(at 54.61 69.85 270)
+		(at 85.725 111.125 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5270,7 +5270,7 @@
 		(dnp no)
 		(uuid "905a6af9-cc9a-4db0-a1bd-5ae17d7d7df6")
 		(property "Reference" "D1"
-			(at 54.102 85.852 90)
+			(at 85.344 116.84 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5280,7 +5280,7 @@
 			)
 		)
 		(property "Value" "AZ5B0S-01F"
-			(at 54.102 88.392 90)
+			(at 85.344 114.3 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5290,7 +5290,7 @@
 			)
 		)
 		(property "Footprint" "Diode_SMD:D_0603_1608Metric"
-			(at 54.61 69.85 0)
+			(at 85.725 111.125 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5301,7 +5301,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 54.61 69.85 0)
+			(at 85.725 111.125 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5312,7 +5312,7 @@
 			)
 		)
 		(property "Description" "Bidirectional transient-voltage-suppression diode"
-			(at 54.61 69.85 0)
+			(at 85.725 111.125 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5436,7 +5436,7 @@
 	)
 	(symbol
 		(lib_id "Device:D_TVS")
-		(at 74.93 69.85 270)
+		(at 85.725 90.805 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5446,7 +5446,7 @@
 		(dnp no)
 		(uuid "952701f0-377a-4a29-ac80-0240001cc65f")
 		(property "Reference" "D3"
-			(at 74.676 85.598 90)
+			(at 85.598 96.774 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5456,7 +5456,7 @@
 			)
 		)
 		(property "Value" "AZ5B0S-01F"
-			(at 74.676 88.138 90)
+			(at 85.598 94.234 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5466,7 +5466,7 @@
 			)
 		)
 		(property "Footprint" "Diode_SMD:D_0603_1608Metric"
-			(at 74.93 69.85 0)
+			(at 85.725 90.805 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5477,7 +5477,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 74.93 69.85 0)
+			(at 85.725 90.805 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5488,7 +5488,7 @@
 			)
 		)
 		(property "Description" "Bidirectional transient-voltage-suppression diode"
-			(at 74.93 69.85 0)
+			(at 85.725 90.805 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5688,7 +5688,7 @@
 	)
 	(symbol
 		(lib_id "Device:D_TVS")
-		(at 96.52 69.85 270)
+		(at 85.725 69.215 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5698,7 +5698,7 @@
 		(dnp no)
 		(uuid "a540c514-0f93-40de-a854-1227f5a4d984")
 		(property "Reference" "D5"
-			(at 96.774 85.344 90)
+			(at 86.106 75.438 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5708,7 +5708,7 @@
 			)
 		)
 		(property "Value" "AZ5B0S-01F"
-			(at 96.774 87.884 90)
+			(at 86.106 72.898 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5718,7 +5718,7 @@
 			)
 		)
 		(property "Footprint" "Diode_SMD:D_0603_1608Metric"
-			(at 96.52 69.85 0)
+			(at 85.725 69.215 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5729,7 +5729,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 96.52 69.85 0)
+			(at 85.725 69.215 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5740,7 +5740,7 @@
 			)
 		)
 		(property "Description" "Bidirectional transient-voltage-suppression diode"
-			(at 96.52 69.85 0)
+			(at 85.725 69.215 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5767,7 +5767,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 74.93 74.93 0)
+		(at 90.805 90.805 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5778,7 +5778,7 @@
 		(fields_autoplaced yes)
 		(uuid "aa77900f-347e-4467-a10e-1e4fe2ef3700")
 		(property "Reference" "#PWR08"
-			(at 74.93 81.28 0)
+			(at 97.155 90.805 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5789,7 +5789,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 74.93 80.01 0)
+			(at 95.885 90.805 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5799,7 +5799,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 74.93 74.93 0)
+			(at 90.805 90.805 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5810,7 +5810,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 74.93 74.93 0)
+			(at 90.805 90.805 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5821,7 +5821,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 74.93 74.93 0)
+			(at 90.805 90.805 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6070,7 +6070,7 @@
 	)
 	(symbol
 		(lib_id "Device:D_TVS")
-		(at 64.77 69.85 270)
+		(at 85.725 100.965 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6080,7 +6080,7 @@
 		(dnp no)
 		(uuid "c74c3107-8c1a-4f20-8fe6-bc460523794d")
 		(property "Reference" "D2"
-			(at 65.024 83.312 90)
+			(at 86.106 106.426 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6090,7 +6090,7 @@
 			)
 		)
 		(property "Value" "AZ5B0S-01F"
-			(at 65.024 85.852 90)
+			(at 86.106 103.886 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6100,7 +6100,7 @@
 			)
 		)
 		(property "Footprint" "Diode_SMD:D_0603_1608Metric"
-			(at 64.77 69.85 0)
+			(at 85.725 100.965 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6111,7 +6111,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 64.77 69.85 0)
+			(at 85.725 100.965 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6122,7 +6122,7 @@
 			)
 		)
 		(property "Description" "Bidirectional transient-voltage-suppression diode"
-			(at 64.77 69.85 0)
+			(at 85.725 100.965 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6149,7 +6149,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 128.27 74.93 0)
+		(at 90.17 38.1 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6160,7 +6160,7 @@
 		(fields_autoplaced yes)
 		(uuid "d6e223b4-1272-4c90-b14a-520cf8310c19")
 		(property "Reference" "#PWR013"
-			(at 128.27 81.28 0)
+			(at 96.52 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6171,7 +6171,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 128.27 80.01 0)
+			(at 95.25 38.1 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6181,7 +6181,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 128.27 74.93 0)
+			(at 90.17 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6192,7 +6192,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 128.27 74.93 0)
+			(at 90.17 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6203,7 +6203,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 128.27 74.93 0)
+			(at 90.17 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6324,7 +6324,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 64.77 74.93 0)
+		(at 90.805 100.965 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6335,7 +6335,7 @@
 		(fields_autoplaced yes)
 		(uuid "f128b448-caa9-4374-8075-454f7eb57ac6")
 		(property "Reference" "#PWR07"
-			(at 64.77 81.28 0)
+			(at 97.155 100.965 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6346,7 +6346,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 64.77 80.01 0)
+			(at 95.885 100.965 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6356,7 +6356,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 64.77 74.93 0)
+			(at 90.805 100.965 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6367,7 +6367,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 64.77 74.93 0)
+			(at 90.805 100.965 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6378,7 +6378,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 64.77 74.93 0)
+			(at 90.805 100.965 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
