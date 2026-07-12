@@ -1,0 +1,5 @@
+﻿Reference,Qty,Value,DNP,Exclude from BOM,Exclude from Board,Footprint,Datasheet
+"D1,D2,D3,D4,D5,D6,D7,D8",8,AZ5B0S-01F,,,,Diode_SMD:D_0603_1608Metric,
+J1,1,USB_C_Receptacle,,,,Connector_USB:USB_C_Receptacle_Molex_105450-0101,https://www.usb.org/sites/default/files/documents/usb_type-c.zip
+P1,1,USB_C_Plug,,,,Expansion_Card:USB_C_Plug_Molex_105444,https://www.usb.org/sites/default/files/documents/usb_type-c.zip
+"U1,U2,U3",3,USBLC6-2SC6,,,,Package_TO_SOT_SMD:SOT-23-6,https://www.st.com/resource/en/datasheet/usblc6-2.pdf
