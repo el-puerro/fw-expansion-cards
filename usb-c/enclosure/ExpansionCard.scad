@@ -222,5 +222,13 @@ module expansion_card_base(open_end, make_printable, pcb_mount="boss_insert") {
 }
 
 // Rotate into a printable orientation
-rotate([-90, 0, 0]) translate([0, -base[1], 0]) expansion_card_base(open_end = false, make_printable = true, pcb_mount="boss_insert");
+%rotate([-90, 0, 0]) translate([0, -base[1], 0]) expansion_card_base(open_end = false, make_printable = true, pcb_mount="boss_insert");
 % rotate([-90, 0, 0]) translate([0, -base[1], 0]) expansion_card_lid();
+
+//scale([1004.4, 1004.4, 1004.4]) {
+    translate([-125, 2, -126]) {
+        rotate([90, 180, 180]) {
+            import("/home/delulucy/projects/fw-expansion-cards/usb-c/pcb/usb-c-expansion-card/pcb.stl");
+        }
+    }
+//}
