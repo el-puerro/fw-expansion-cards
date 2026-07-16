@@ -1780,6 +1780,17 @@
 			(uuid "318bd89b-7ac5-47f9-8285-85c7820d8991")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/extra_parts/AMPHENOL-12402075E512A.pretty/AMPHENOL-12402075E512A.step"
+			(offset
+				(xyz 0 -1 -8)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -0)
+			)
+		)
 	)
 	(footprint "Expansion_Card:USB_C_Plug_Molex_105444"
 		(layer "F.Cu")
@@ -2336,15 +2347,15 @@
 			(uuid "ffa1578d-d829-47aa-bfd4-3701a3de7794")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/Expansion_Card.pretty/USB_C_Plug_Molex_105444.kicad_mod"
+		(model "${KIPRJMOD}/3D-models/1054440001.stp"
 			(offset
-				(xyz 0 0 0)
+				(xyz 0 0 -1)
 			)
 			(scale
-				(xyz 0 0 0)
+				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz -0 -0 -0)
+				(xyz 90 -0 -0)
 			)
 		)
 	)
