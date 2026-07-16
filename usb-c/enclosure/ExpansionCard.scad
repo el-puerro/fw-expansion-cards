@@ -32,7 +32,7 @@ boss_x = 3.7;
 
 // The rail cutout in the sides of the card
 module rail(make_printable) {
-    rail_depth = 0.81;
+    rail_depth = 1;//0.81;
     rail_flat_h = 0.32;
     
     mirror([0, 1, 0]) {
@@ -164,7 +164,7 @@ module expansion_card_base(open_end, make_printable, pcb_mount="boss_insert") {
     boss_radius = 2.3;
     
     difference() {
-        cube(base);
+        cube([base[0]-0.2, base[1], base[2]-0.2]);
         
         difference() {
             notch = 1.0;
@@ -227,15 +227,15 @@ module expansion_card_base(open_end, make_printable, pcb_mount="boss_insert") {
 explode_factor = 10.5;
 
 // Rotate into a printable orientation
-%rotate([-90, 0, 0]) translate([0, -base[1], 0]) expansion_card_base(open_end = true, make_printable = true, pcb_mount="boss");
-%rotate([-90, 0, 0]) translate([0, -base[1]-side_wall, 0]) expansion_card_lid();
+rotate([-90, 0, 0]) translate([0, -base[1], 0]) expansion_card_base(open_end = true, make_printable = true, pcb_mount="boss");
+rotate([-90, 0, 0]) translate([0, -base[1]-side_wall, 0]) expansion_card_lid();
 
 //scale([1004.4, 1004.4, 1004.4]) {
-    translate([-125, 2, -125]) {
-        rotate([90, 180, 180]) {
-            import("/home/delulucy/projects/fw-expansion-cards/usb-c/pcb/usb-c-expansion-card/pcb.stl");
-        }
-    }
+//    translate([-125, 2, -125]) {
+//        rotate([90, 180, 180]) {
+//            import("/home/delulucy/projects/fw-expansion-cards/usb-c/pcb/usb-c-expansion-card/pcb.stl");
+//        }
+//    }
 //}
     
 
