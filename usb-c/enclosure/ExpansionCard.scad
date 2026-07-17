@@ -17,7 +17,7 @@ side_wall = 1.5;
 // Size and location of the typical PCB
 pcb_gap = 0.5;
 pcb = [26.0, 30.0, 0.8];
-pcb_h = 3.05;
+pcb_h = 2.55;
 
 // USB-C plug dimensions
 usb_c_r = 1.315;
@@ -102,6 +102,32 @@ module usb_c_cutout(open_top) {
         translate([usb_c_w-usb_c_r*2, usb_c_r, 0]) cylinder(r2 = usb_c_r, r1 = 3.84/2, h = 10-7.7, $fn = 64);
         translate([usb_c_w/2-usb_c_r, usb_c_r, 0]) scale([1.8, 1, 1]) rotate([0, 0, 45]) cylinder(r2 = usb_c_r*sqrt(2), r1 = 3.84/2*sqrt(2), h = 10-7.7, $fn = 4);
         
+        translate([-usb_c_r - 1, -2.5+usb_c_r, -8.5]) cube([usb_c_w + 2.5, 5, 0.9+8.5]);
+
+        
+        // If the card drops in from the top rather than sliding in from the front,
+        // cut out a slot for the USB-C plug to drop into.
+        if (open_top) {
+            translate([-usb_c_r, -10+usb_c_r, 0]) cube([usb_c_w, 10, 10]);
+        }
+    }
+}
+
+// The cutout for the USB-C receptacle
+module usb_c_cutout_2(open_top) {
+    // The plug is "pushed in" by an extra 0.6 to account for 3d printing tolerances
+    translate([-usb_c_w/2+usb_c_r, 7-10+0.6, usb_c_r]) rotate([-90, 0, 0]) union() {
+        translate([0, usb_c_r, 0]) cylinder(r = usb_c_r, h = 10, $fn = 64);
+        translate([usb_c_w-usb_c_r*2, usb_c_r, 0]) cylinder(r = usb_c_r, h = 10, $fn = 64);
+        cube([usb_c_w-usb_c_r*2, usb_c_r*2, 10]);
+        
+        // Cutout for the pin side of the shell that expands out
+        translate([0, usb_c_r, 0]) cylinder(r2 = usb_c_r, r1 = 3.84/2, h = 10-7.7, $fn = 64);
+        translate([usb_c_w-usb_c_r*2, usb_c_r, 0]) cylinder(r2 = usb_c_r, r1 = 3.84/2, h = 10-7.7, $fn = 64);
+        translate([usb_c_w/2-usb_c_r, usb_c_r, 0]) scale([1.8, 1, 1]) rotate([0, 0, 45]) cylinder(r2 = usb_c_r*sqrt(2), r1 = 3.84/2*sqrt(2), h = 10-7.7, $fn = 4);
+        
+        translate([-usb_c_r - 1.3, -2+usb_c_r, 1.356]) cube([usb_c_w + 2.5, 1.25, 0.9+10]);
+        
         // If the card drops in from the top rather than sliding in from the front,
         // cut out a slot for the USB-C plug to drop into.
         if (open_top) {
@@ -146,7 +172,7 @@ module expansion_card_lid() {
         translate([side_wall + gap, side_wall + gap, gap*2 + side_wall]) cube([base[0] - side_wall * 2 - gap * 2, side_wall - gap, base[2] - side_wall*2 - gap*2]);
     }
     // USBC receptacle cutout
-    translate([base[0]/2, -base[2]/2.5, usb_c_r+usb_c_h+0.5]) usb_c_cutout(false);
+    translate([base[0]/2, base[2]-2.75, usb_c_r+usb_c_h+1]) usb_c_cutout_2(false);
     }
 }
 
@@ -184,7 +210,7 @@ module expansion_card_base(open_end, make_printable, pcb_mount="boss_insert") {
         fillet(edge_r, base[0]);
         
         // The USB-C plug cutout
-        translate([base[0]/2, base[1], usb_c_r+usb_c_h]) usb_c_cutout(!open_end);
+        translate([base[0]/2, base[1], usb_c_r+usb_c_h-0.35]) usb_c_cutout(!open_end);
         // USBC receptacle cutout
         //translate([base[0]/2, base[1], usb_c_r+usb_c_h]) usb_c_cutout(!open_end);
         
@@ -228,10 +254,10 @@ explode_factor = 10.5;
 
 // Rotate into a printable orientation
 rotate([-90, 0, 0]) translate([0, -base[1], 0]) expansion_card_base(open_end = true, make_printable = true, pcb_mount="boss");
-rotate([-90, 0, 0]) translate([0, -base[1]-side_wall, 0]) expansion_card_lid();
+//rotate([-90, 0, 0]) translate([0, -base[1]-side_wall, 0]) expansion_card_lid();
 
 
-%    translate([-125, 2, -125]) {
+ %   translate([-125, 2.55, -126.75]) {
         rotate([90, 180, 180]) {
             import("/home/delulucy/projects/fw-expansion-cards/usb-c/pcb/usb-c-expansion-card/pcb.stl");
         }
