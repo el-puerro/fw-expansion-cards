@@ -140,16 +140,13 @@ module boss(radius, use_insert, make_printable) {
 // Incomplete implementation of a lid to use with this shell
 module expansion_card_lid() {
     gap = 0.2;
+    difference() {
     union() {
         translate([side_wall+gap, side_wall+gap, base[2]-side_wall]) cube([base[0]-side_wall*2-gap*2, base[1]-side_wall*2+gap*2, side_wall]);
-        difference() {
-            //translate([base[0]/2-usb_c_w/2+gap, base[1]-side_wall-gap, usb_c_r+usb_c_h]) cube([usb_c_w-gap*2, side_wall+gap, base[2]-(usb_c_r+usb_c_h)]);
-            //translate([base[0]/2, base[1], base[1] + usb_c_r+usb_c_h]) usb_c_cutout(false);
-        }
         translate([side_wall + gap, side_wall + gap, gap*2 + side_wall]) cube([base[0] - side_wall * 2 - gap * 2, side_wall - gap, base[2] - side_wall*2 - gap*2]);
-        
-                // USBC receptacle cutout
-        translate([base[0]/2, base[1], usb_c_r+usb_c_h]) usb_c_cutout(false);
+    }
+    // USBC receptacle cutout
+    translate([base[0]/2, -base[2]/2.5, usb_c_r+usb_c_h+0.5]) usb_c_cutout(false);
     }
 }
 
@@ -230,11 +227,11 @@ module expansion_card_base(open_end, make_printable, pcb_mount="boss_insert") {
 explode_factor = 10.5;
 
 // Rotate into a printable orientation
-//%rotate([-90, 0, 0]) translate([0, -base[1], 0]) expansion_card_base(open_end = true, make_printable = true, pcb_mount="boss");
+rotate([-90, 0, 0]) translate([0, -base[1], 0]) expansion_card_base(open_end = true, make_printable = true, pcb_mount="boss");
 rotate([-90, 0, 0]) translate([0, -base[1]-side_wall, 0]) expansion_card_lid();
 
 
-    translate([-125, 2, -125]) {
+%    translate([-125, 2, -125]) {
         rotate([90, 180, 180]) {
             import("/home/delulucy/projects/fw-expansion-cards/usb-c/pcb/usb-c-expansion-card/pcb.stl");
         }
