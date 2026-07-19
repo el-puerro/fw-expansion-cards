@@ -1,13 +1,7 @@
-// Parametric Expansion Card
-//  An OpenSCAD implementation of a basic enclosure of an Expansion Card for
-//  use with Framework products like the Framework Laptop.
-//
-//  See https://frame.work for more information about Framework products and
-//  additional documentation around Expansion Cards.
-
 // Parametric Expansion Card © 2021 by Nirav Patel at Framework Computer LLC
 // is licensed under Attribution 4.0 International. 
 // To view a copy of this license, visit http://creativecommons.org/licenses/by/4.0/
+
 
 // The basic dimensions of an Expansion Card
 base = [30.0, 32.0, 6.8];
@@ -206,27 +200,12 @@ module expansion_card_base(open_end, make_printable, pcb_mount="boss_insert") {
             translate([inner[0]+side_wall-notch, inner[1]+side_wall-notch_l, side_wall]) cube([notch, notch_l, notch_h]);
         }
         
-        // The rounded front edge to match the laptop
-        edge_r = 0.8;
-        fillet(edge_r, base[0]);
-        
         // The USB-C plug cutout
         translate([base[0]/2, base[1], usb_c_r+usb_c_h-0.35]) usb_c_cutout(!open_end);
-        // USBC receptacle cutout
-        //translate([base[0]/2, base[1], usb_c_r+usb_c_h]) usb_c_cutout(!open_end);
         
         // The sliding rails
         translate([0, base[1], rail_h]) rail(make_printable);
         translate([base[0], base[1], rail_h]) mirror([1, 0, 0]) rail(make_printable);
-        
-        // Cut out the end of what is normally the aluminum cover
-        ledge_cut = 0.6;
-        ledge_cut_d = 3.2;
-        ledge_fillet_r = 0.3;
-        
-        //translate([0, base[1]-ledge_cut_d, 0]) cube([base[0], ledge_cut_d, ledge_cut]);
-        //// The fillet on that cover
-        //translate([base[0], base[1]-ledge_cut_d, 0]) rotate([0, 0, 180]) fillet(ledge_cut/2, base[0]);
     }
     
     if (pcb_mount == "boss" || pcb_mount == "boss_insert") {        
@@ -251,8 +230,6 @@ module expansion_card_base(open_end, make_printable, pcb_mount="boss_insert") {
     }
 }
 
-explode_factor = 10.5;
-
 // Rotate into a printable orientation
 rotate([-90, 0, 0]) translate([0, -base[1], 0]) expansion_card_base(open_end = true, make_printable = true, pcb_mount="boss");
 //intersection() {
@@ -265,16 +242,3 @@ rotate([-90, 0, 0]) translate([0, -base[1]-side_wall, 0]) expansion_card_lid();
         }
     }
 //}
-
-
-//// Rotate into a printable orientation
-//rotate([-90, 0, 0]) translate([0, -base[1], 0]) expansion_card_base(open_end = true, make_printable = true, pcb_mount="boss");
-//rotate([-90, 0, 0]) translate([0, -base[1], 20]) expansion_card_lid();
-//
-////scale([1004.4, 1004.4, 1004.4]) {
-//    translate([-125, 15, -125]) {
-//        rotate([90, 180, 180]) {
-//            import("/home/delulucy/projects/fw-expansion-cards/usb-c/pcb/usb-c-expansion-card/pcb.stl");
-//        }
-//    }
-////}
