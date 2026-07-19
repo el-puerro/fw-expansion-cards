@@ -16,8 +16,9 @@ side_wall = 1.5;
 
 // Size and location of the typical PCB
 pcb_gap = 0.5;
-pcb = [26.0, 30.0, 0.8];
+pcb = [26.0, 30.0, 1.6];
 pcb_h = 2.55;
+//pcb_h = 2;
 
 // USB-C plug dimensions
 usb_c_r = 1.315;
@@ -27,7 +28,7 @@ usb_c_h = 2.2;
 rail_h = 4.25; // to top of rail
 
 // Boss locations matching the other Framework Expansion Cards
-boss_y = 10.5;
+boss_y = 10.5 + 1.6;
 boss_x = 3.7;
 
 // The rail cutout in the sides of the card
@@ -126,7 +127,7 @@ module usb_c_cutout_2(open_top) {
         translate([usb_c_w-usb_c_r*2, usb_c_r, 0]) cylinder(r2 = usb_c_r, r1 = 3.84/2, h = 10-7.7, $fn = 64);
         translate([usb_c_w/2-usb_c_r, usb_c_r, 0]) scale([1.8, 1, 1]) rotate([0, 0, 45]) cylinder(r2 = usb_c_r*sqrt(2), r1 = 3.84/2*sqrt(2), h = 10-7.7, $fn = 4);
         
-        translate([-usb_c_r - 1.3, -2+usb_c_r, 1.356]) cube([usb_c_w + 2.5, 1.25, 0.9+10]);
+        translate([-usb_c_r - 2.5, -2+usb_c_r, 1.356]) cube([usb_c_w + 5.5, 1.25, 0.9+18]);
         
         // If the card drops in from the top rather than sliding in from the front,
         // cut out a slot for the USB-C plug to drop into.
@@ -165,7 +166,7 @@ module boss(radius, use_insert, make_printable) {
 
 // Incomplete implementation of a lid to use with this shell
 module expansion_card_lid() {
-    gap = 0.2;
+    gap = 0.16;
     difference() {
     union() {
         translate([side_wall+gap, side_wall+gap, base[2]-side_wall]) cube([base[0]-side_wall*2-gap*2, base[1]-side_wall*2+gap*2, side_wall]);
@@ -223,9 +224,9 @@ module expansion_card_base(open_end, make_printable, pcb_mount="boss_insert") {
         ledge_cut_d = 3.2;
         ledge_fillet_r = 0.3;
         
-        translate([0, base[1]-ledge_cut_d, 0]) cube([base[0], ledge_cut_d, ledge_cut]);
-        // The fillet on that cover
-        translate([base[0], base[1]-ledge_cut_d, 0]) rotate([0, 0, 180]) fillet(ledge_cut/2, base[0]);
+        //translate([0, base[1]-ledge_cut_d, 0]) cube([base[0], ledge_cut_d, ledge_cut]);
+        //// The fillet on that cover
+        //translate([base[0], base[1]-ledge_cut_d, 0]) rotate([0, 0, 180]) fillet(ledge_cut/2, base[0]);
     }
     
     if (pcb_mount == "boss" || pcb_mount == "boss_insert") {        
@@ -254,15 +255,16 @@ explode_factor = 10.5;
 
 // Rotate into a printable orientation
 rotate([-90, 0, 0]) translate([0, -base[1], 0]) expansion_card_base(open_end = true, make_printable = true, pcb_mount="boss");
-//rotate([-90, 0, 0]) translate([0, -base[1]-side_wall, 0]) expansion_card_lid();
+//intersection() {
+rotate([-90, 0, 0]) translate([0, -base[1]-side_wall, 0]) expansion_card_lid();
 
 
- %   translate([-125, 2.55, -126.75]) {
+#    translate([-125, 2.55, -126.75]) {
         rotate([90, 180, 180]) {
             import("/home/delulucy/projects/fw-expansion-cards/usb-c/pcb/usb-c-expansion-card/pcb.stl");
         }
     }
-    
+//}
 
 
 //// Rotate into a printable orientation
