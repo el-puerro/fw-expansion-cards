@@ -165,11 +165,15 @@ module expansion_card_lid() {
     union() {
         translate([side_wall+gap, side_wall+gap, base[2]-side_wall]) cube([base[0]-side_wall*2-gap*2, base[1]-side_wall*2+gap*2, side_wall]);
         translate([side_wall + gap, side_wall + gap, gap*2 + side_wall]) cube([base[0] - side_wall * 2 - gap * 2, side_wall - gap, base[2] - side_wall*2 - gap*2]);
+        
+        translate([boss_x, boss_y + 1.6, base[2] - side_wall-pcb_h]) cylinder(r=0.7, h=pcb_h, $fn=16);
+        translate([base[0] - boss_x, boss_y + 1.6, base[2] - side_wall-pcb_h]) cylinder(r=0.7, h=pcb_h, $fn=16);
     }
     // USBC receptacle cutout
     translate([base[0]/2, base[2]-2.75, usb_c_r+usb_c_h+1]) usb_c_cutout_2(false);
     }
 }
+
 
 // A basic, printable Expansion Card enclosure
 //  open_end - A boolean to make the end of the card that is exposed when inserted open
@@ -206,6 +210,7 @@ module expansion_card_base(open_end, make_printable, pcb_mount="boss_insert") {
         // The sliding rails
         translate([0, base[1], rail_h]) rail(make_printable);
         translate([base[0], base[1], rail_h]) mirror([1, 0, 0]) rail(make_printable);
+        
     }
     
     if (pcb_mount == "boss" || pcb_mount == "boss_insert") {        
@@ -232,8 +237,8 @@ module expansion_card_base(open_end, make_printable, pcb_mount="boss_insert") {
 
 // Rotate into a printable orientation
 rotate([-90, 0, 0]) translate([0, -base[1], 0]) expansion_card_base(open_end = true, make_printable = true, pcb_mount="boss");
-//intersection() {
-rotate([-90, 0, 0]) translate([0, -base[1]-side_wall, 0]) expansion_card_lid();
+
+rotate([-90, 0, 0]) translate([0, -base[1]-side_wall, 5]) expansion_card_lid();
 
 
 #    translate([-125, 2.55, -126.75]) {
@@ -241,4 +246,3 @@ rotate([-90, 0, 0]) translate([0, -base[1]-side_wall, 0]) expansion_card_lid();
             import("/home/delulucy/projects/fw-expansion-cards/usb-c/pcb/usb-c-expansion-card/pcb.stl");
         }
     }
-//}
